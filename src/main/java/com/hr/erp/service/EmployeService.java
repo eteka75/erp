@@ -20,7 +20,7 @@ public class EmployeService {
         return employeRepository.findAll();
     }
 
-    public com.hr.erp.controller.Optional<Employe> getEmploye(Long id){
+    public Optional<Employe> getEmploye(Long id){
         return employeRepository.findById(id);
     }
 
@@ -32,10 +32,7 @@ public class EmployeService {
         return employeRepository.save(employe);
     }
 
-    public Employe findById(Long id) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'findById'");
-    }
+    
 
     // public Optional<Employe> updateEmploye(Employe employe){
     //     Optional<Employe> emp = employeRepository.findById(employe.getId());
